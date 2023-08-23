@@ -1,0 +1,53 @@
+// Compiled from JavaCrud.java (version 17 : 61.0, super bit)
+class JavaCrud$1 implements java.lang.Runnable {
+  
+  // Method descriptor #8 ()V
+  // Stack: 1, Locals: 1
+  JavaCrud$1();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [10]
+    4  return
+      Line numbers:
+        [pc: 0, line: 32]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: new JavaCrud(){}
+  
+  // Method descriptor #8 ()V
+  // Stack: 2, Locals: 2
+  public void run();
+     0  new JavaCrud [17]
+     3  dup
+     4  invokespecial JavaCrud() [19]
+     7  astore_1 [window]
+     8  aload_1 [window]
+     9  getfield JavaCrud.frame : javax.swing.JFrame [20]
+    12  iconst_1
+    13  invokevirtual javax.swing.JFrame.setVisible(boolean) : void [24]
+    16  goto 24
+    19  astore_1 [e]
+    20  aload_1 [e]
+    21  invokevirtual java.lang.Exception.printStackTrace() : void [30]
+    24  return
+      Exception Table:
+        [pc: 0, pc: 16] -> 19 when : java.lang.Exception
+      Line numbers:
+        [pc: 0, line: 35]
+        [pc: 8, line: 36]
+        [pc: 16, line: 37]
+        [pc: 20, line: 38]
+        [pc: 24, line: 40]
+      Local variable table:
+        [pc: 0, pc: 25] local: this index: 0 type: new JavaCrud(){}
+        [pc: 8, pc: 16] local: window index: 1 type: JavaCrud
+        [pc: 20, pc: 24] local: e index: 1 type: java.lang.Exception
+      Stack map table: number of frames 2
+        [pc: 19, same_locals_1_stack_item, stack: {java.lang.Exception}]
+        [pc: 24, same]
+
+  Inner classes:
+    [inner class info: #1 JavaCrud$1, outer class info: #0
+     inner name: #0, accessflags: 0 default]
+  Enclosing Method: #17  #43 JavaCrud.main([Ljava/lang/String;)V
+
+Nest Host: #17 JavaCrud
+}
